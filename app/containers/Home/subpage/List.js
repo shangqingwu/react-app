@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {getList} from '../../../fetch/home';
+import {getList} from '../../../fetch/Home';
 import ListComponent from '../../../components/ListComponent';
 import LoadMore from '../../../components/LoadMore';
 export default class List extends Component{
