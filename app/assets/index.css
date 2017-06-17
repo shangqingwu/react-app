@@ -1,0 +1,27 @@
+/*公有样式，引到app文件夹的 index.js 中*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei UI";
+  /*微软雅黑*/
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input {
+  outline: none;
+}
+.back {
+  background: #e9203d;
+}
+.font {
+  color: #e9203d;
+}
+button {
+  background: #e9203d;
+}

@@ -1,0 +1,54 @@
+.order-list-item{
+  display: flex;
+  padding: 10px;
+  color: #999;
+  img,.order-list-content,.order-list-button{
+    display: flex;
+    flex: 1;
+  }
+  img{
+    width: 120px;
+    height: 90px;
+  }
+  .order-list-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .order-list-button{
+    display: flex;
+    justify-content: center; //水平居中
+    align-items: center;//垂直居中
+    button{
+      width: 60px;
+      height: 35px;
+      color: #fff;
+      border: 0;
+      border-radius: 5px;
+    }
+    .unselect{
+      background: #ccc;
+    }
+  }
+}
+.comment-area{
+  display: flex;
+  flex-direction: column; //子元素竖着排列；
+  padding: 10px;
+  textarea{
+    border: 1px solid #ccc;
+    height: 70px;
+  }
+  div{
+    display: flex;
+    flex-direction: row; //子元素横向排列；
+    button{
+      width: 60px;
+      height: 35px;
+      margin: 10px;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}

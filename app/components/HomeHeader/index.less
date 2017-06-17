@@ -1,33 +1,38 @@
 .home-header{
-    height:48px;
-    display: flex;//flex布局，里面所有的元素呈一行显示；
-    align-items: center; //垂直居中；
-    color:#fff;
-    .city{
-        flex: 1;
-        display: flex;//让里面的元素呈一行显示，不写这句话，下面的那句话就不起作用；
-        justify-content: center;//水平居中
-        align-items: center; //垂直居中；
+  height: 48px;
+  display: flex;//flex布局；
+  align-items: center;//垂直水平全部居中；
+  color: #fff;
+  & :nth-child(1){
+    flex: 1.2;/* city占的宽度：100% 除以（1+4+0.5）乘以1（也就是flex占得份数） 乘以设计稿宽度
+                           例： 100%  / ( 1+0.5+0.5) * 0.5                        * 640        = 160px ，这样三列分别占320px,160px,160px；*/
+    display: flex;
+    justify-content: center;
+  }
+  .city{
+   /* flex: 1;!* city占的宽度：100% 除以（1+4+0.5）乘以1（也就是flex占得份数） 乘以设计稿宽度
+                           例： 100%  / ( 1+0.5+0.5) * 0.5                        * 640        = 160px ，这样三列分别占320px,160px,160px；*!*/
+    display: flex;
+    justify-content: center; //内容水平居中；（整体）
+    align-items: center; //垂直居中（每一条items）
+  }
+  .search{
+    flex: 4;
+    background: #fff;
+    border-radius: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    i{color:#666;margin: 0 5px}
+    input{
+      border: none;
+      width: 100%;
     }
-    .search{
-        flex: 4;
-        display: flex;
-        background: #ffffff;
-        border-radius: 10px;
-        height: 30px;
-        align-items: center;//垂直居中；
-        i{
-            color: #666;
-            margin: 0 5px;
-        }
-        input{
-            border: none;
-            width: 100%;
-        }
-    }
-    .profile{
-        flex: 0.5;
-        display: flex;
-        justify-content: center;
-    }
+  }
+  a{
+    color: #fff;  //Link标签默认转为a标签，a标签不会继承字体颜色，会是a标签的默认颜色，所以要手动设置为 #fff；
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+  }
 }

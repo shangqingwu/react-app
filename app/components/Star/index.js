@@ -1,22 +1,29 @@
 import React,{Component} from 'react';
+import  './index.less';
 export default class Star extends Component{
     constructor(props){
+        // console.log(props);
         super(props);
-        /*将父组件InfoComponent传进来星星总数转换为数组，数组中默认有5项，代表好评率，有几个星星就有几个true，其余为false；再通过判断true或false显示实心星星或者空心星星；*/
-        let ary = [];
-        for (let i = 1; i <= 5; i++){
-            i<=props.count?ary.push(true):ary.push(false);
+        let arr = [];
+        for (let i=1;i<=5;i++){
+            if (i<=props.count){
+                arr.push(true);
+            }else {
+                arr.push(false);
+            }
         }
+        // console.log(arr); //[true, true, true, true, false]
+        //由于arr要放到下面用，所以把它放到状态中；
         this.state={
-            ary
+            arr
         }
     }
     render(){
-        console.log(this.state.ary);
+        /*item是一个布尔值*/
         return (
             <div>
                 {
-                    this.state.ary.map((item,index)=>(
+                    this.state.arr.map((item,index)=>(
                         item?<i className="iconfont icon-collection_fill font" key={index}></i>:<i className="iconfont icon-collection font" key={index}></i>
                     ))
                 }

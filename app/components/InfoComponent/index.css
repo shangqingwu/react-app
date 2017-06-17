@@ -1,0 +1,22 @@
+.info-component {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 30px;
+}
+.info-component .info-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+.info-component .info-list img {
+  width: 130px;
+  height: 100px;
+  margin-right: 10px;
+}
+.info-component .info-list .info-star {
+  display: flex;
+  justify-content: space-between;
+}
+.info-component .info-list .info-star span {
+  color: #ccc;
+}

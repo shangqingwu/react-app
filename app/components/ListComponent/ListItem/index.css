@@ -1,0 +1,37 @@
+.list-item {
+  display: flex;
+  /*方向横向，默认不写*/
+  line-height: 25px;
+  margin: 10px;
+}
+.list-item img {
+  width: 120px;
+  height: 90px;
+}
+.list-item .list-item-content {
+  position: relative;
+  padding-left: 2%;
+  width: 98%;
+}
+.list-item .list-item-content .distance {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.list-item .list-item-content strong {
+  color: red;
+}
+.list-item .list-item-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 150px;
+}
+.list-item .list-item-content div {
+  display: flex;
+  justify-content: space-between;
+  /*左右一边一个，两端对齐*/
+}
+.list-item .list-item-content div span {
+  color: #ccc;
+}

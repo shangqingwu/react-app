@@ -1,0 +1,18 @@
+.choose-city h3 {
+  color: #666;
+  margin-left: 2.5%;
+}
+.choose-city ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.choose-city ul li {
+  margin: 5px 1.5%;
+  width: 30.333%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}

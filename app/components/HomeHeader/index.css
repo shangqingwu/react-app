@@ -1,0 +1,42 @@
+.home-header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.home-header :nth-child(1) {
+  flex: 1.2;
+  /* city占的宽度：100% 除以（1+4+0.5）乘以1（也就是flex占得份数） 乘以设计稿宽度
+                           例： 100%  / ( 1+0.5+0.5) * 0.5                        * 640        = 160px ，这样三列分别占320px,160px,160px；*/
+  display: flex;
+  justify-content: center;
+}
+.home-header .city {
+  /* flex: 1;!* city占的宽度：100% 除以（1+4+0.5）乘以1（也就是flex占得份数） 乘以设计稿宽度
+                           例： 100%  / ( 1+0.5+0.5) * 0.5                        * 640        = 160px ，这样三列分别占320px,160px,160px；*!*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-header .search {
+  flex: 4;
+  background: #fff;
+  border-radius: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.home-header .search i {
+  color: #666;
+  margin: 0 5px;
+}
+.home-header .search input {
+  border: none;
+  width: 100%;
+}
+.home-header a {
+  color: #fff;
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+}

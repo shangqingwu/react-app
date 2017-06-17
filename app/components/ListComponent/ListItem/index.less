@@ -1,38 +1,35 @@
 .list-item{
-  display: flex;
-  align-items: center;
+  display: flex;/*方向横向，默认不写*/
   line-height: 25px;
   margin: 10px;
   img{
-    width: 120px;
+    width:120px;
     height: 90px;
   }
   .list-item-content{
-    display: flex;
-    flex-direction: column;
+    position: relative;
     padding-left: 2%;
     width: 98%;
-    position: relative;
+    .distance{
+      position: absolute;
+      right: 5px;
+      top: 0;
+    }
+    strong{
+      color:red;
+    }
     p{
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      width: 150px;
+      width:150px;
     }
     div{
       display: flex;
-      justify-content: space-between;
-      strong{
-        color: #e9203d;
-      }
+      justify-content: space-between;/*左右一边一个，两端对齐*/
       span{
         color: #ccc;
       }
-    }
-    .distance{
-      position: absolute;
-      right: 5px;
-      top:0;
     }
   }
 }

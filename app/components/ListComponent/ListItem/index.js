@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import './index.less';
+import React,{Component} from 'react';
+import "./index.less";
 import {Link} from "react-router-dom";
-export default class ListItem extends Component {
-    render() {
-        let {img, title, subTitle, price, id, distance, number}= this.props.data; //this.props.data拿到的是list后台数据中data数组中的每一条对象；
-        return (
-            <Link to={"/detail/"+id}>
+export default class ListItem extends Component{
+    render(){
+        let {img,title,subTitle,distance,price,number,id}=this.props.data;
+        return  (
+            <Link to={"/detail/"+id}>{/*Link默认a标签，必须要有to属性，代表要跳到哪；*/}
                 <div className="list-item">
                     <img src={img}/>
                     <div className="list-item-content">
